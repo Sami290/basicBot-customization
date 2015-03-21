@@ -53,10 +53,10 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "DoaBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        startupCap: 1, // 1-200
+        startupCap: 20, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
         maximumAfk: 120,
@@ -71,7 +71,7 @@
         voteSkip: false,
         voteSkipLimit: 10,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 12,
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
@@ -94,22 +94,22 @@
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: null,
+        rulesLink: http://forum.dawnofasmara.net/threads/dawn-of-asmara-official-plug-dj-rules.316/,
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
-        website: null,
+        website: http://forum.dawnofasmara.net/,
         intervalMessages: [],
         messageInterval: 5,
-        songstats: true,
+        songstats: false,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+            NSFW: "https://rawgit.com/Sami290/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/Sami290/basicBot-customization/master/blacklists/ExampleOPlist.json"
         }
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/Sami290/basicBot/master/basicBot.js', extend);
 
 }).call(this);
